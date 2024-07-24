@@ -5,3 +5,4 @@ commit 4 - started on adding and linking the other two pages onto the CSS file
 commt  5 - started to pretty up the index page however code is not responding
 commit 6 - found out error was due to div names being spelt wrong 
 commit 7- added a photo about calculus onto to the index page 
+commit 8 - added the blur effect onto the parallax navbar
