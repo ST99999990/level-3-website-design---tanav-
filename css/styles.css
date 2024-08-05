@@ -44,6 +44,12 @@ body {
   height: 100px; /* Adjust the height as needed */
   z-index: 1000; /* Ensure the navbar appears above other content */
   color: black;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .h2 {
@@ -72,7 +78,7 @@ body {
 }
 
 .index_details {
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .centre_text {
@@ -82,7 +88,15 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 500px;
   margin-left: 2%;
-  margin-top: 4%;
+  margin-top: 10%;
+}
+
+.img_nav {
+  width: 8rem;
+  height: 8rem;
+  float: center;
+  padding: -100%;
+  background-color: black;
 }
 
 .name {
@@ -97,21 +111,54 @@ body {
   float: right;
   margin-right: 11%;
   padding: 0%;
+  margin-top: 7%;
 }
 
 .courses_board {
   text-align: center;
-  margin-top: 280px;
+  margin-top: 17%;
   font-size: 5rem;
   margin-right: 150px;
   margin-left: 150px;
-  background-color: rgb(159, 242, 215);
+  background-color: #8295ba;
   opacity: 90%;
   height: 900px;
+  color: white;
 }
 
 .course_name {
   margin-top: 50px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: inherit;
+}
+
+.course_buttons {
+  text-align: center;
+  font-family: monospace;
+  color: white;
+  font-size: 3rem;
+  margin: 5%;
+}
+
+.names {
+  margin-bottom: 30%;
+}
+
+.buttons_externals {
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: monospace;
+}
+
+.buttons_externals ul li {
+  display: inline-block;
+  margin: 1%;
+  font-size: 2rem;
+  align-content: center;
+}
+
+.buttons_externals ul li a {
+  text-decoration: solid;
+  transition: 0.3s ease 0s;
 }
