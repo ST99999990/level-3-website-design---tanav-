@@ -8,3 +8,9 @@ commit 7- added a photo about calculus onto to the index page
 commit 8 - added the blur effect onto the parallax navbar
 commit 9 - had to remove the logo due to complications with the navbar
 commit 10 - issue with the logo is not fixed yet 
+commit 11 - fixed issue with logo 
+commit 12 - add pages 
+commit 13 - worked on my slides
+commit 14 - fixed the navbar and the parralax 
+commit 15 - fixed the issue with the course selection board
+commit 16  -added an "about us" paragraph 
