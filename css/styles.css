@@ -79,6 +79,8 @@ body {
   padding: -1%;
 }
 
+/*CSS for index page*/
+
 .center {
   text-align: center;
   font-size: 2rem;
@@ -180,12 +182,16 @@ body {
   align-content: center;
 }
 
-.navbar ul li a {
+.text_redirect_2 ul li a {
   text-decoration: none;
   transition: 0.3s ease 0s;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.3rem;
+}
+
+.text_redirect_2 ul li:hover {
+  text-decoration: underline;
 }
 
 .Integration {
@@ -228,7 +234,7 @@ body {
 }
 
 .facts {
-  height: 40rem;
+  height: 25rem;
   width: 100%;
   background-color: white;
 }
@@ -253,40 +259,40 @@ body {
   padding: 0px;
 }
 
-.member {
-  background-color: white;
-  height: 39rem;
-  width: 100%;
-}
-
-.header_member {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: larger;
-  color: black;
-  margin: 4%;
-}
-
 .text_member {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   width: 30rem;
   margin: 4%;
+  margin-left: 34%;
+  text-align: center;
+  font-size: large;
+  text-transform: initial;
+}
+
+.text_member_2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 30rem;
+  margin: 4%;
+  margin-left: 34%;
+  text-align: center;
   font-size: large;
 }
 
-.become {
-  background-color: white;
-  height: 5rem;
-  width: 13rem;
-  box-shadow: 4px 8px black;
-  text-align: center;
+.Sign_me_up {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-left: 3%;
-  padding: 1%;
-  font-size: large;
+  width: 30rem;
+  height: 20rem;
+  margin: 4%;
+  margin-left: 47%;
   color: black;
+  text-decoration: underline;
+  border: none;
+  font-size: large;
+  padding: 13px, 25px;
+  border: 12px, 40px;
 }
 
 .become:hover {
@@ -295,12 +301,149 @@ body {
 
 .footer {
   width: 100%;
-  height: 25rem;
-  background-color: rgb(81, 81, 81);
+  height: 26rem;
+  background-color: #0b2149;
 }
 
-.image_foot {
-  width: 20rem;
-  height: 11rem;
-  padding: 1%;
+.message {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 30rem;
+  margin: 4%;
+  margin-left: 34%;
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+
+.contact_header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 30rem;
+  margin: 4%;
+  margin-left: 34%;
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+
+.contact_info {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 30rem;
+  margin: 4%;
+  margin-left: 34%;
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+
+.img_footer {
+  width: 6rem;
+  height: 6rem;
+}
+
+/*CSS for signup page*/
+.navbar_1 {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+  margin-bottom: 0%;
+  padding-top: 10%;
+  margin: 0%;
+  background-attachment: fixed;
+  color: whitesmoke;
+}
+
+.nav_buttons_1 {
+  position: fixed;
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 200%;
+  /*makes any backdrop the navbar has passed blur*/
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+  height: 153px; /* Adjust the height as needed */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
+.navbar_1 ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 1%;
+  font-size: 2rem;
+  align-content: center;
+}
+
+.navbar_1 ul li a {
+  text-decoration: solid;
+  color: black;
+  transition: 0.3s ease 0s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+.navbar_1 ul li a:hover {
+  text-decoration: underline;
+}
+
+.left_side {
+  font-size: 1rem;
+  height: 35rem;
+  width: 40rem;
+  float: center;
+  background-color: #2c533c;
+  margin: 1%;
+  color: black;
+  padding: 0%;
+  display: flex;
+  column-gap: 20px;
+}
+
+.left_side_text {
+  font-family: "Source Serif Pro", "Noto Serif", serif;
+  width: 30rem;
+  margin: 4%;
+  margin-top: 30%;
+  margin-left: 10%;
+  text-align: center;
+  font-size: large;
+  color: white;
+  font-size: 2rem;
+}
+
+.text_signup {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  margin-top: 10%;
+}
+
+.sign_up {
+  background-color: aliceblue;
+  margin-left: 10%;
+  width: 30rem;
+}
+
+.sign_up_text {
+  font-family: "Source Serif Pro", "Noto Serif", serif;
+  width: 30rem;
+  margin: 4%;
+  margin-top: 30%;
+  text-align: center;
+  font-size: large;
+  color: black;
+  font-size: 1rem;
+}
+
+.parent_sign {
+  display: flex;
 }
