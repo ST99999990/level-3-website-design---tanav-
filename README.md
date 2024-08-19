@@ -20,3 +20,4 @@ commit 19 - fixed issue
 commit 20 - worked on login page 
 commit 21 - finished testing for login page 
 commit 22 - worked on the "integration" page 
+commit 23 - had to add a section to proivde credit to websites that i have taken ideas and content from (with their permission)
