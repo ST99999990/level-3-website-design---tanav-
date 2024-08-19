@@ -8,10 +8,8 @@
     <link rel="icon" href="../img/Tanav Academy_transparent-.png" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="nav_buttons">
-        <!--snow effect-->
-
+    <div class="navbar_2">
+      <div class="nav_buttons_2">
         <!-- Corrected the class name -->
         <!-- Logo for the website -->
         <ul>
@@ -28,3 +26,143 @@
           <li><a class="name" href="../pages/signup.html">SIGN UP</a></li>
         </ul>
       </div>
+    </div>
+    <div class="parent_sign">
+      <div class="left_side">
+        <div class="left_side_text">
+          Join today to impove your skills until you're at the next level.
+          <p class="text_signup">Log in to Tanav Academy to get started</p>
+        </div>
+      </div>
+      <div class="sign_up">
+        <div class="sign_up_text">
+          <h1>i see you</h1>
+          <p class="text_signup">Login as a learner</p>
+          <div class="container">
+            <form action="" id="form">
+              <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" />
+                <div class="error"></div>
+              </div>
+
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+                <div class="error"></div>
+              </div>
+
+              <button type="submit">Register</button>
+            </form>
+            <script>
+              const form = document.querySelector("#form");
+              const username = document.querySelector("#username");
+              const email = document.querySelector("#email");
+              const password = document.querySelector("#password");
+              const cpassword = document.querySelector("#cpassword");
+
+              form.addEventListener("submit", (e) => {
+                if (!validateInputs()) {
+                  e.preventDefault();
+                }
+              });
+
+              function validateInputs() {
+                const usernameVal = username.value.trim();
+                const emailVal = email.value.trim();
+                const passwordVal = password.value.trim();
+                const cpasswordVal = cpassword.value.trim();
+                let success = true;
+
+                if (usernameVal === "") {
+                  success = false;
+                  setError(username, "Username is required");
+                } else {
+                  setSuccess(username);
+                }
+
+                if (emailVal === "") {
+                  success = false;
+                  setError(email, "Email is required");
+                } else if (!validateEmail(emailVal)) {
+                  success = false;
+                  setError(email, "Please enter a valid email");
+                } else {
+                  setSuccess(email);
+                }
+
+                if (passwordVal === "") {
+                  success = false;
+                  setError(password, "Password is required");
+                } else if (passwordVal.length < 8) {
+                  success = false;
+                  setError(
+                    password,
+                    "Password must be atleast 8 characters long"
+                  );
+                } else {
+                  setSuccess(password);
+                }
+
+                if (cpasswordVal === "") {
+                  success = false;
+                  setError(cpassword, "Confirm password is required");
+                } else if (cpasswordVal !== passwordVal) {
+                  success = false;
+                  setError(cpassword, "Password does not match");
+                } else {
+                  setSuccess(cpassword);
+                }
+
+                return success;
+              }
+              //element - password, msg- pwd is reqd
+              function setError(element, message) {
+                const inputGroup = element.parentElement;
+                const errorElement = inputGroup.querySelector(".error");
+
+                errorElement.innerText = message;
+                inputGroup.classList.add("error");
+                inputGroup.classList.remove("success");
+              }
+
+              function setSuccess(element) {
+                const inputGroup = element.parentElement;
+                const errorElement = inputGroup.querySelector(".error");
+
+                errorElement.innerText = "";
+                inputGroup.classList.add("success");
+                inputGroup.classList.remove("error");
+              }
+
+              const validateEmail = (email) => {
+                return String(email)
+                  .toLowerCase()
+                  .match(
+                    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                  );
+              };
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <img
+        class="img_footer"
+        src="../img/Tanav Academy_transparent-.png"
+        alt=""
+      />
+      <div class="message">
+        Our goal is to improve and help studnets who find learning hard or
+        boring, with your help we can make it happen.
+      </div>
+      <div class="contact_header">CONTACT US</div>
+
+      <div class="contact_info">
+        <p>prasadtanav@gmail.com</p>
+        <p>st22160@ormiston.school.nz</p>
+      </div>
+    </footer>
+  </body>
+</html>
