@@ -14,3 +14,9 @@ commit 13 - worked on my slides
 commit 14 - fixed the navbar and the parralax 
 commit 15 - fixed the issue with the course selection board
 commit 16  -added an "about us" paragraph 
+commit 17 - worked on the sign up sheet 
+commit 18 - tested the sign up sheet, however ran into an issue due to the information not being saved by the browser 
+commit 19 - fixed issue 
+commit 20 - worked on login page 
+commit 21 - finished testing for login page 
+commit 22 - worked on the "integration" page 
