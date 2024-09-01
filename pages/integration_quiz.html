@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Tanav Academy</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="../img/Tanav Academy_transparent-.png" />
+  </head>
+  <body></body>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Basic Integration Quiz</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div class="quiz-container">
+        <p class="quiz_text">Basic Integration Quiz</p>
+
+        <form id="quiz-form">
+          <!-- Question 1 -->
+          <div class="question">
+            <p>1. ∫4𝑥+ 2</p>
+            <label>
+              <input type="radio" name="q1" value="A" /> 4χ²/2 + 2χ + C </label
+            ><br />
+            <label> <input type="radio" name="q1" value="B" /> 4χ + 2 + C</label
+            ><br />
+            <label>
+              <input type="radio" name="q1" value="C" /> 4χ² + 2χ + C
+            </label>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="question">
+            <p>2.∫cos 5𝑥+ 2</p>
+            <label>
+              <input type="radio" name="q2" value="A" />sin 5𝑥/5 + C </label
+            ><br />
+            <label> <input type="radio" name="q2" value="B" /> tan 5𝑥 + C</label
+            ><br />
+            <label>
+              <input type="radio" name="q2" value="C" /> tan 5𝑥/5 + C
+            </label>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="question">
+            <p>3. 5/𝑥</p>
+            <label> <input type="radio" name="q3" value="A" />5 ln|𝑥| + C</label
+            ><br />
+            <label> <input type="radio" name="q3" value="B" /> 5χ² + C </label
+            ><br />
+            <label>
+              <input type="radio" name="q3" value="C" /> 5χ²/5 + C
+            </label>
+          </div>
+
+          <button type="submit">Submit Answers</button>
+        </form>
+
+        <div id="result"></div>
+      </div>
+
+      <script>
+        document
+          .getElementById("quiz-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            let score = 0;
+
+            // Correct answers
+            const answers = {
+              q1: "A",
+              q2: "A",
+              q3: "A",
+            };
+
+            // Loop through answers
+            for (const [question, answer] of Object.entries(answers)) {
+              const selected = document.querySelector(
+                `input[name="${question}"]:checked`
+              );
+              if (selected && selected.value === answer) {
+                score++;
+              }
+            }
+
+            // Display result
+            document.getElementById(
+              "result"
+            ).innerText = `You scored ${score} out of ${
+              Object.keys(answers).length
+            }`;
+          });
+      </script>
+    </body>
+  </html>
+</html>
