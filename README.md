@@ -21,3 +21,16 @@ commit 20 - worked on login page
 commit 21 - finished testing for login page 
 commit 22 - worked on the "integration" page 
 commit 23 - had to add a section to proivde credit to websites that i have taken ideas and content from (with their permission)
+commit 24 - worked on Integration page 
+commit 25 - added two different scroll functions howvever didn't see the point in it
+commit 26 - added a box and the content inside
+commit 27 - tried to add another one however interfered with the footer
+commit 28 - removed footer
+commit 29 - added another box for past year papers
+commit 30 - started on Differentiation page
+commit 31 - finished page and added videos from Infinity plus one (with his permission)
+commit 32 - started on forms 
+commit 33 - finished integrarion form, however found issue with submit button 
+commit 34 - fixed issue and works perfectly now
+commit 35 - started on other two forms and will test
+commit 36 - finished webiste going to do one last round of testing before getting feedback and submititng 
